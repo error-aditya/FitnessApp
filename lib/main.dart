@@ -1,3 +1,5 @@
+import 'package:fitnessapp/screens/about_screen.dart';
+import 'package:fitnessapp/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -30,8 +32,9 @@ class MyApp extends StatelessWidget {
       opaqueRoute: Get.isOpaqueRouteDefault,
       popGesture: Get.isPopGestureEnable,
       transitionDuration: const Duration(milliseconds: 230),
-      initialRoute: AppPages.Initial,
-      getPages: AppPages.routes,
+      // initialRoute: AppPages.Initial,
+      // getPages: AppPages.routes,
+      home: AboutScreen(),
     );
   }
 }

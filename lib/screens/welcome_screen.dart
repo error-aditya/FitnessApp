@@ -19,7 +19,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/background.jpg'),
+                image: AssetImage('assets/images/welcome.jpg'),
                 fit: BoxFit.cover,
               ),
             ),
@@ -50,6 +50,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       ],
                     ),
                   ),
+                  const Spacer(),
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Column(
@@ -64,8 +65,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         ),
                         SizedBox(height: 17),
                         Text(
-                          'Train your body and your mind with us at anywhere',
-                          style: TextStyle(color: Colors.white),
+                          'Train your body and your mind with \nus at anywhere',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ],
                     ),
@@ -74,17 +78,36 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   TextButton(
                     onPressed: () {},
                     child: Container(
+                      height: 50,
+                      width: Get.width * 0.7,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(25),
                         color: Colors.blue,
                       ),
-                      child: Text(
-                        'Get Started',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                      child: const Center(
+                        child: Text(
+                          'Get Started',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
                         ),
+                      ),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+
+                    child: Container(
+                      height: 50,
+                      width: Get.width * 0.7,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(25),
+                        color: Colors.transparent,
+                        border: Border.all(width: 2,color: Colors.white),
+                      ),
+                      child: const Center(child: Text('Sign In',style: TextStyle(color: Colors.white)),
                       ),
                     ),
                   ),
