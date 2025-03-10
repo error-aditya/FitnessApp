@@ -12,6 +12,7 @@ dependencies:
 
   get: ^4.6.5
   cupertino_icons: ^1.0.8
+  lucide_icons: ^0.257.0
   google_fonts: ^6.2.1
 
 dev_dependencies:
