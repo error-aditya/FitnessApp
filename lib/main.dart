@@ -1,8 +1,17 @@
 // import 'package:fitnessapp/screens/about_screen.dart';
 // import 'package:fitnessapp/screens/alert_box/alert_box.dart';
-import 'package:fitnessapp/screens/badge_box/badge_box.dart';
-import 'package:fitnessapp/screens/bottom_app_bar/bottom_app_bar.dart';
-import 'package:fitnessapp/screens/bottom_sheet/bottom_sheet.dart';
+// import 'package:fitnessapp/screens/badge_box/badge_box.dart';
+// import 'package:fitnessapp/screens/bottom_app_bar/bottom_app_bar.dart';
+// import 'package:fitnessapp/screens/bottom_sheet/bottom_sheet.dart';
+// import 'package:fitnessapp/screens/check_box/check_box.dart';
+// import 'package:fitnessapp/screens/date_picker_list/date_picker_list.dart';
+// import 'package:fitnessapp/screens/exposed_dropdown/exposed_drop_down.dart';
+// import 'package:fitnessapp/screens/list_items/list_items.dart';
+// import 'package:fitnessapp/screens/model_bottom_sheet/model_bottom_sheet.dart';
+// import 'package:fitnessapp/screens/nav_drawer_list/normal_navigation_drawer.dart';
+// import 'package:fitnessapp/screens/text_fields_lists/outline_text_field.dart';
+import 'package:fitnessapp/screens/text_fields_lists/search_bar.dart';
+// import 'package:fitnessapp/screens/text_fields_lists/text_fields.dart';
 // import 'package:fitnessapp/screens/drop_down_menu/drop_down_menu.dart';
 // import 'package:fitnessapp/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
@@ -44,7 +53,16 @@ class MyApp extends StatelessWidget {
       // home: AppBars(),
       // home: BottomAppBars(),
       // home: BadgeBox(),
-      home: BottomSheetExample()
+      // home: BottomSheetExample(),
+      // home: CheckBoxExample(),
+      // home: DatePickerExample(),
+      // home: ExposedDropDownExample(),
+      // home: ListItemsExample(),
+      // home: ModelBottomSheetExample(),\
+      // home: NormalNavigationDrawer(),
+      // home: OutlineTextFieldExample(),
+      // home: TextFieldsExample(),
+      home: SearchBarExample(),
     );
   }
 }
