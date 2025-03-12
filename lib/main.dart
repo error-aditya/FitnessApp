@@ -11,6 +11,7 @@
 // import 'package:fitnessapp/screens/nav_drawer_list/normal_navigation_drawer.dart';
 // import 'package:fitnessapp/screens/text_fields_lists/outline_text_field.dart';
 import 'package:fitnessapp/screens/indicators/linear_progress_indicator.dart';
+import 'package:fitnessapp/screens/qr_code_example/qr_code.dart';
 import 'package:fitnessapp/screens/sliders/range_slider.dart';
 import 'package:fitnessapp/screens/sliders/normal_slider.dart';
 import 'package:fitnessapp/screens/snackbars/custom_snackbar.dart';
@@ -78,7 +79,8 @@ class MyApp extends StatelessWidget {
       // home: CustomSnackbarExample(),
       // home: SwitchExample(),
       // home: TabsExample(),
-      home: TimePickerExample(),
+      // home: TimePickerExample(),
+      home: QRcodeExample(),
     );
   }
 }

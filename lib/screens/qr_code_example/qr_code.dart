@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
-class TimePickerExample extends StatefulWidget {
-  const TimePickerExample({super.key});
+class QRcodeExample extends StatefulWidget {
+  const QRcodeExample({super.key});
 
   @override
-  State<TimePickerExample> createState() => _TimePickerExampleState();
+  State<QRcodeExample> createState() => _QRcodeExampleState();
 }
 
-class _TimePickerExampleState extends State<TimePickerExample> {
+class _QRcodeExampleState extends State<QRcodeExample> {
   times() {
     return showDialog(
       barrierDismissible: false,
@@ -25,21 +25,17 @@ class _TimePickerExampleState extends State<TimePickerExample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Time Picker Example'), centerTitle: true),
+      appBar: AppBar(
+        title: Text('QR Code Example'), 
+        centerTitle: true,
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            ElevatedButton(
-              onPressed: () {
-                times();
-                // showTimePicker(context: context, initialTime: TimeOfDay.now());
-              },
-              child: Text('Set Time'),
-            ),
             QrImageView(
-              data: 'Hello World, I am Aditya.',
+              data: 'Aditya Khodabhai Rajput.',
               version: 2,
               dataModuleStyle: QrDataModuleStyle(
                 dataModuleShape: QrDataModuleShape.square,
