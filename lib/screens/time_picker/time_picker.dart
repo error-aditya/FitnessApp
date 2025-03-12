@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:qr_flutter/qr_flutter.dart';
-
 class TimePickerExample extends StatefulWidget {
   const TimePickerExample({super.key});
 
@@ -37,21 +35,6 @@ class _TimePickerExampleState extends State<TimePickerExample> {
                 // showTimePicker(context: context, initialTime: TimeOfDay.now());
               },
               child: Text('Set Time'),
-            ),
-            QrImageView(
-              data: 'Hello World, I am Aditya.',
-              version: 2,
-              dataModuleStyle: QrDataModuleStyle(
-                dataModuleShape: QrDataModuleShape.square,
-                color: Colors.black,
-              ),
-              size: 200.0,
-              backgroundColor: Colors.white,
-              constrainErrorBounds: true,
-              eyeStyle: QrEyeStyle(
-                eyeShape: QrEyeShape.circle,
-                color: Colors.black,
-              ),
             ),
           ],
         ),
