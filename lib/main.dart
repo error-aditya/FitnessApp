@@ -10,7 +10,15 @@
 // import 'package:fitnessapp/screens/model_bottom_sheet/model_bottom_sheet.dart';
 // import 'package:fitnessapp/screens/nav_drawer_list/normal_navigation_drawer.dart';
 // import 'package:fitnessapp/screens/text_fields_lists/outline_text_field.dart';
+import 'package:fitnessapp/screens/indicators/linear_progress_indicator.dart';
+import 'package:fitnessapp/screens/sliders/range_slider.dart';
+import 'package:fitnessapp/screens/sliders/normal_slider.dart';
+import 'package:fitnessapp/screens/snackbars/custom_snackbar.dart';
+import 'package:fitnessapp/screens/switches/switch_example.dart';
+import 'package:fitnessapp/screens/tabs/tabs_example.dart';
+import 'package:fitnessapp/screens/text_fields_lists/docked_search_bar.dart';
 import 'package:fitnessapp/screens/text_fields_lists/search_bar.dart';
+import 'package:fitnessapp/screens/time_picker/time_picker.dart';
 // import 'package:fitnessapp/screens/text_fields_lists/text_fields.dart';
 // import 'package:fitnessapp/screens/drop_down_menu/drop_down_menu.dart';
 // import 'package:fitnessapp/screens/welcome_screen.dart';
@@ -62,7 +70,15 @@ class MyApp extends StatelessWidget {
       // home: NormalNavigationDrawer(),
       // home: OutlineTextFieldExample(),
       // home: TextFieldsExample(),
-      home: SearchBarExample(),
+      // home: SearchBarExample(),
+      // home: DockedSearchBar(),
+      // home: LinearProgressIndicatorExample(),
+      // home: NormalSlider(),
+      // home: RangeSliderExample(),
+      // home: CustomSnackbarExample(),
+      // home: SwitchExample(),
+      // home: TabsExample(),
+      home: TimePickerExample(),
     );
   }
 }

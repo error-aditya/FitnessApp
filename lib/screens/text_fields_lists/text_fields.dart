@@ -8,9 +8,9 @@ class TextFieldsExample extends StatefulWidget {
 }
 
 class _TextFieldsExampleState extends State<TextFieldsExample> {
+  bool obss = true;
   @override
   Widget build(BuildContext context) {
-    bool obss = false;
     return Scaffold(
       appBar: AppBar(title: Text('Text Fields Example')),
       body: Center(
@@ -164,12 +164,7 @@ class _TextFieldsExampleState extends State<TextFieldsExample> {
                         ),
                         onPressed: () {
                           setState(() {
-                            obss = false;
-                            if (obss == true) {
-                              obss = false;
-                            } else {
-                              obss = true;
-                            }
+                            obss = !obss;
                           });
                         },
                       ),
